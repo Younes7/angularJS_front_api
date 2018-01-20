@@ -1,0 +1,28 @@
+<div class="panel panel-default" ng-init="getPlayer()">
+    <div class="panel-heading">
+        <h3 class="panel-title" "text-center">Olympique de Marseille</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <h4>{{player.name}}</h4>
+                        <h4>{{player.prenom}}</h4>
+                        <h4>{{player.number}}</h4>
+                        <h4>{{player.position}}</h4>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <img class="thumbnail" src="{{player.image}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class>
+    <a href="#!/players/edit/{{player._id}}" class="btn btn-success">Modifier</a> 
+    <a href="#" ng-click="removePlayer(player._id)" class="btn btn-danger">Supprimer</a>
+</div>

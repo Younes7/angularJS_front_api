@@ -1,0 +1,29 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Effectif Pro Olympique de Marseille</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://www.om.net/equipes/effectifs/joueurs/2017-2018/equipe-professionnelle">Navbar</a>
+        <a class="nav-brand" href="#!/players">Effectif</a>
+        <a class="nav-link" href="#!/players/add">Ajouter un Olympien</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/app.js"></script>
+    <script src="/controllers/players.js"></script>
+</body>
+</div>
+</html>
